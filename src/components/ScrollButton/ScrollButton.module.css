@@ -1,0 +1,19 @@
+.scrollButton {
+  position: fixed;
+  right: 3%;
+  bottom: 10%;
+  height: 48px;
+  width: 48px;
+  z-index: 999;
+  border: 0.5px solid rgba(255, 207, 36, 0.35);
+  background: #292929;
+  box-sizing: border-box;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  outline: none;
+}
+
+.scrollButton:hover {
+  background: rgba(255, 207, 36, 0.5);
+  transition: 0.3s ease-in-out;
+}

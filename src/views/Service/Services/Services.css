@@ -1,0 +1,189 @@
+.service__content {
+  font-family: 'Gotham Pro', sans-serif;
+  color: #292929;
+  background-color: #F0F0F0;
+  padding: 110px 0;
+}
+
+.service__content * {
+
+  color: #292929;
+}
+
+.service__content h1 {
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 48px;
+  width: 73%;
+  font-weight: bold;
+}
+
+.service__content h2 {
+  font-size: 25px;
+  margin: 0;
+  padding: 50px 0 15px 0;
+  width: 73%;
+  font-weight: bold;
+}
+
+.service__content p {
+  margin: 0;
+  padding: 15px 0 0 0;
+  width: 73%;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.service__content figure {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+.service__content figure img {
+  width: 100%;
+}
+
+.service__content figcaption {
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.service__content ul {
+  padding: 15px 0 0 18px;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+blockquote {
+  margin: 35px 0 0 0;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 135%;
+  text-align: center;
+  padding: 55px 10%;
+  position: relative;
+}
+
+blockquote:last-of-type {
+  margin: 35px 0 35px 0;
+}
+
+blockquote:nth-child(odd) {
+  background-color: #292929;
+  color: #ffcf24;
+}
+
+blockquote:nth-child(even) {
+  background-color: #ffcf24;
+  color: #292929;
+}
+
+blockquote::before {
+  content: url('../../../assets/images/quotes.svg');
+  position: absolute;
+  top: 20px;
+  left: 10%;
+}
+
+blockquote::after {
+  content: url('../../../assets/images/quotes.svg');
+  position: absolute;
+  top: 20px;
+  right: 10%;
+}
+
+.service__content .row {
+  display: flex;
+}
+
+.service__content .row p {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.service__content .row p:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1170px) {
+  .service__content {
+    padding: 40px 0;
+  }
+
+  .service__content h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .service__content h2 {
+    width: 100%;
+  }
+
+  .service__content p {
+    padding: 15px 0 0 0;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .service__content figure {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .service__content figcaption {
+    padding-top: 15px;
+    font-size: 16px;
+  }
+
+  .service__content ul {
+    padding: 15px 0 0 18px;
+    font-size: 16px;
+  }
+
+  blockquote {
+    margin: 30px 0 0 0;
+    font-size: 16px;
+    padding: 24px 10%;
+  }
+
+  blockquote:last-of-type {
+    margin: 30px 0 30px 0;
+  }
+
+  blockquote::before {
+    top: 10px;
+  }
+
+  blockquote::after {
+    top: 10px;
+  }
+
+  .service__content .row p {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .service__content h1 {
+    font-size: 36px;
+  }
+  .service__content .row {
+    flex-direction: column;
+  }
+
+  blockquote::before {
+    left: 10px;
+  }
+
+  blockquote::after {
+    right: 10px;
+  }
+}

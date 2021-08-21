@@ -1,0 +1,587 @@
+.company__firstScreen {
+  font-family: 'Gotham Pro', sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  position: relative;
+}
+
+.company__banner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+.company__banner span {
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  color: #FFCF24;
+  margin: 0;
+  padding: 0;
+}
+
+.company__banner h1 {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+.company__scroll {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 9%;
+  margin: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  text-align: center;
+}
+
+.company__content {
+  font-family: 'Gotham Pro', sans-serif;
+  color: #FFFFFF;
+}
+
+.company__content h2 {
+  font-size: 48px;
+  letter-spacing: 0.05em;
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.company__content p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  margin: 0;
+  padding: 0;
+  width: 72%;
+}
+
+.company__content .company__mission {
+  border: 1px solid #FFCF24;
+  width: 100%;
+  padding: 90px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 90px 0;
+}
+
+.company__content .company__mission span {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}
+
+.company__content .company__mission h3 {
+  font-weight: normal;
+  margin: 30px 0 0 0;
+  padding: 0;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  width: 100%;
+  text-align: center;
+}
+
+.company__content .company__facts {
+  margin: 90px auto;
+  width: 100%;
+}
+
+.company__content .company__facts h3 {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.company__content .company__facts div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.company__content .company__facts div .company__fact {
+  padding: 25px;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+}
+
+.company__content .company__facts div .company__fact i {
+  font-style: normal;
+  font-size: 50px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.company__content .company__facts div .company__fact span {
+  font-weight: 300;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 15px 0 0 0;
+  padding: 0;
+  display: block;
+}
+
+.company__clients {
+  margin-top: 180px;
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+.company__header {
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  width: 50%;
+  font-weight: bold;
+  font-size: 50px;
+  color: #FFFFFF;
+  text-align: left;
+  margin: 0;
+}
+
+.company__header p {
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.company__clientsList {
+  margin-top: 150px;
+  overflow: hidden;
+}
+
+.company__clientsList > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.company__clientsList img {
+  opacity: .4;
+  flex-shrink: 0;
+  display: inline-block;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: 100%;
+  /*height: -moz-fit-content;*/
+  transition: 0.3s ease-in-out;
+  padding: 60px;
+  /*!*width: 20%;*!*/
+  /*display: block;*/
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.company__clientsList img:hover {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.company__team {
+  margin-top: 300px;
+  padding-bottom: 240px;
+  font-family: 'Gotham Pro', sans-serif;
+}
+
+.company__employees {
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.company__employee {
+  position: relative;
+  overflow: hidden;
+}
+
+.company__employee img {
+  width: 100%;
+}
+
+.company__employee div {
+  background-color: #ffcf24;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  position: absolute;
+  left: -100%;
+  bottom: 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.company__employee:hover div {
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.company__employee div span {
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0.05em;
+  color: #161616;
+}
+
+.company__employee div i {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: #161616;
+}
+
+@media (max-width: 1440px) {
+  .company__banner span {
+    font-size: 20px;
+  }
+
+  .company__banner h1 {
+    font-size: 56px;
+  }
+
+  .company__content h2 {
+    font-size: 42px;
+  }
+
+  .company__content p {
+    font-size: 16px;
+    line-height: 170%;
+  }
+
+  .company__content .company__mission {
+    padding: 70px;
+    margin: 70px 0;
+  }
+
+  .company__content .company__mission span {
+    font-size: 18px;
+  }
+
+  .company__content .company__mission h3 {
+    margin: 30px 0 0 0;
+    font-size: 30px;
+  }
+
+  .company__content .company__facts {
+    margin: 90px auto;
+  }
+
+  .company__content .company__facts h3 {
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 30px;
+  }
+
+  .company__content .company__facts div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  .company__content .company__facts div .company__fact {
+    padding: 25px;
+  }
+
+  .company__content .company__facts div .company__fact i {
+    font-size: 40px;
+  }
+
+  .company__content .company__facts div .company__fact span {
+    font-size: 20px;
+    margin: 15px 0 0 0;
+  }
+
+  .company__clients {
+    margin-top: 120px;
+  }
+
+  h3 {
+    width: 50%;
+    font-size: 40px;
+  }
+
+  .company__header p {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .company__clientsList {
+    width: 100%;
+    margin-top: 120px;
+  }
+
+  .company__team {
+    margin-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .company__employees {
+    margin-top: 96px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .company__employee div {
+    padding: 15px 25px;
+    bottom: 30px;
+  }
+
+  .company__employee div span {
+    font-size: 20px;
+  }
+
+  .company__employee div i {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .company__banner span {
+    font-size: 18px;
+  }
+
+  .company__banner h1 {
+    font-size: 48px;
+  }
+
+  .company__content h2 {
+    font-size: 38px;
+  }
+
+  .company__content .company__mission {
+    padding: 50px;
+    margin: 50px 0;
+  }
+
+  .company__content .company__mission span {
+    font-size: 16px;
+  }
+
+  .company__content .company__mission h3 {
+    margin: 30px 0 0 0;
+    font-size: 22px;
+  }
+
+  .company__content .company__facts {
+    margin: 40px auto;
+  }
+
+  .company__content .company__facts h3 {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+
+  .company__content .company__facts div {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .company__content .company__facts div .company__fact {
+    padding: 20px;
+  }
+
+  .company__content .company__facts div .company__fact i {
+    font-size: 36px;
+  }
+
+  .company__content .company__facts div .company__fact span {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+  }
+
+  .company__clients {
+    margin-top: 80px;
+  }
+
+  h3 {
+    width: 50%;
+    font-size: 30px;
+  }
+
+  .company__header p {
+    font-size: 20px;
+  }
+
+  .company__team {
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .company__employees {
+    margin-top: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .company__employee div {
+    padding: 15px 25px;
+    bottom: 30px;
+  }
+
+  .company__employee div span {
+    font-size: 18px;
+  }
+
+  .company__employee div i {
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  .company__clientsList {
+    margin-top: 60px;
+    padding: 0 -60px;
+  }
+
+  .company__clientsList img {
+    padding: 60px;
+    /*width: 25%;*/
+  }
+}
+
+@media (max-width: 960px) {
+  .company__clientsList {
+    margin-top: 40px;
+    padding: 0 -20px;
+  }
+
+  .company__clientsList img {
+    /*padding: 20px;*/
+    /*width: 25%;*/
+  }
+}
+
+@media (max-width: 640px) {
+  .company__banner span {
+    font-size: 18px;
+  }
+
+  .company__banner h1 {
+    font-size: 48px;
+  }
+
+  .company__content h2 {
+    font-size: 38px;
+  }
+
+  .company__content p {
+    width: 100%;
+  }
+
+  .company__content .company__mission {
+    padding: 50px;
+    margin: 50px 0;
+  }
+
+  .company__content .company__mission span {
+    font-size: 16px;
+  }
+
+  .company__content .company__mission h3 {
+    margin: 30px 0 0 0;
+    font-size: 22px;
+  }
+
+  .company__content .company__facts div {
+    grid-template-columns: 1fr;
+  }
+
+  .company__content .company__facts div .company__fact i {
+    font-size: 36px;
+  }
+
+  .company__content .company__facts div .company__fact span {
+    font-size: 16px;
+  }
+
+  .company__clients {
+    margin-top: 80px;
+  }
+
+  h3 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .company__header {
+    flex-direction: column;
+  }
+
+  .company__header p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .company__clients .company__clientsList {
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .company__clients .company__clientsList img {
+    padding: 20px;
+    /*width: 25%;*/
+  }
+
+  .company__clientsList img {
+    /*margin-bottom: 70px;*/
+  }
+
+  .company__team {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .company__employees {
+    margin-top: 50px;
+    grid-template-columns: 1fr;
+  }
+
+  .company__employee div {
+    left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .company__clients .company__clientsList img {
+    /*width: 50%;*/
+  }
+}
+
+@media (max-width: 480px) {
+  .company__clients .company__clientsList {
+    margin: 0;
+  }
+  .company__clients .company__clientsList img {
+    /*padding: 60px 60px 0 60px;*/
+    padding: 40px;
+    width: 50%;
+  }
+}

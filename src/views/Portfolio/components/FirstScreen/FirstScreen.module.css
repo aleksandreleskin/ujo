@@ -1,0 +1,272 @@
+.firstScreen {
+  height: 100%;
+  max-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.slider__wrapper {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__slides {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  left: auto;
+  right: 0;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.slider__slides li {
+  margin-bottom: 24px;
+  text-align: right;
+}
+
+.slider__slides li:last-child {
+  margin-bottom: 0;
+}
+
+.slider__slides li a {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.085em;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: right;
+  transition: 0.3s ease-in-out;
+}
+
+.slider__slides .slider__slides_active {
+  color: #ffcf24;
+  transition: 0.3s ease-in-out;
+}
+
+.slider__control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  padding: 0;
+  margin: -1px auto auto auto;
+  width: 100%;
+  max-width: 1050px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.slider__control li:first-child {
+  margin-left: auto;
+}
+
+.slider__control li:last-child {
+  margin-right: auto;
+}
+
+.slider__control li {
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1.5s ease-in-out;
+  width: 105px;
+  position: relative;
+}
+
+.slider__control li a {
+  font-weight: 300;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 42px;
+  height: 100%;
+  letter-spacing: 0.085em;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 1.5s ease-in-out;
+}
+
+.slider__control .list__item_active {
+  border-top: 1px solid #ffcf24;
+  color: #ffcf24;
+  transition: 1.5s ease-in-out;
+}
+
+.slider__control .list__item_active a {
+  color: #ffcf24;
+  transition: 1.5s ease-in-out;
+}
+
+.slider__scroll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  text-align: center;
+  height: 100%;
+}
+
+.slider__scroll__horizontal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  display: none;
+  height: 100%;
+}
+
+.slider__buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 9%;
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+@media (max-width: 1640px) {
+  .slider__buttons {
+    max-width: 840px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .slider__control {
+    max-width: 840px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .slider__buttons {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .slider__control {
+    max-width: 630px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .slider__buttons {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .slider__social li {
+    margin-bottom: 40px;
+  }
+
+  .slider__slides li {
+    margin-bottom: 20px;
+  }
+
+  .slider__social li a {
+    font-size: 14px;
+  }
+
+  .slider__slides li a {
+    font-size: 14px;
+  }
+
+  .slider__control {
+    max-width: 450px;
+  }
+
+  .slider__control li a {
+    font-size: 14px;
+    padding: 42px 36px;
+    height: 100%;
+    width: 90px;
+  }
+}
+
+@media (min-width: 960px) {
+  .firstScreen .slider>div {
+    /*padding-right: 0;*/
+  }
+}
+
+@media (max-width: 960px) {
+  .slider__social li {
+    margin-bottom: 36px;
+  }
+  .slider__slides li {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 870px) {
+  .slider__social {
+    display: none;
+  }
+
+  .slider__slides {
+    display: none;
+  }
+
+  .slider__control li a {
+    padding: 36px;
+  }
+
+  .slider__scroll {
+    display: none;
+  }
+
+  .slider__scroll__horizontal {
+    display: block;
+  }
+
+  .slider__control {
+    justify-content: center;
+  }
+
+  .slider__control li {
+    display: none;
+  }
+
+  .slider__control .list__item_active {
+    display: flex;
+  }
+
+  .slider__control li:first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slider__control li:last-child {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

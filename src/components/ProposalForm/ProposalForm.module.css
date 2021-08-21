@@ -1,0 +1,358 @@
+.proposalForm {
+  padding: 0 0 20px 0;
+  font-family: Lato, sans-serif;
+}
+
+.proposalForm__title {
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  letter-spacing: 0.05em;
+  color: #ffcf24;
+  margin: 0;
+  padding: 0;
+}
+
+.proposalForm__contacts {
+  margin: 20px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.proposalForm__contacts a {
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 160%;
+}
+
+.proposalForm__email {
+  color: #ffcf24;
+}
+
+.proposalForm__tel {
+  color: #ffffff;
+}
+
+.proposalForm__row {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.proposalForm__row label {
+  width: 50%;
+  padding-right: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.proposalForm__row label:last-child {
+  padding-right: 0;
+}
+
+.proposalForm__row label>* {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.proposalForm__row label>div>div {
+  height: calc(100% + 2px);
+  box-sizing: border-box;
+  margin: -1px;
+}
+
+.proposalForm__row label:last-child button {
+  right: 10px;
+}
+
+.proposalForm__row label button {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.proposalForm__row label button::after {
+  content: '';
+  height: 1px;
+  width: 30px;
+  background-color: #ff6624;
+  transform: rotate(45deg);
+  display: block;
+}
+
+.proposalForm__row label button::before {
+  content: '';
+  height: 1px;
+  width: 30px;
+  background-color: #ff6624;
+  transform: rotate(-45deg);
+  display: block;
+}
+
+.proposalForm__row label .proposalForm__license_error {
+  display: block;
+  color: #ff6624;
+  height: auto;
+}
+
+.proposalForm__row input, textarea {
+  padding: 18px 30px;
+  outline: none;
+  background: #242424;
+  border: 1px solid #ffcf24;
+  font-size: 18px;
+  font-family: Lato, sans-serif;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.proposalForm__row input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #292929 !important;
+  -webkit-text-fill-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+
+.proposalForm__row .proposalForm__input_error {
+  border: 1px solid #FF6624;
+  color: #ff6624;
+  transition: 0.3s ease-in-out;
+}
+
+.proposalForm__row .proposalForm__input_error::placeholder {
+  color: #ff6624;
+  transition: 0.3s ease-in-out;
+}
+
+.proposalForm__row input::placeholder {
+  color: rgba(255, 255, 255, .9);
+}
+
+.proposalForm__row textarea {
+  height: 130px;
+  resize: none;
+  width: 100%;
+}
+
+.proposalForm__row textarea::placeholder {
+  color: rgba(255, 255, 255, .9);
+}
+
+.proposalForm__row .proposalForm__labelFile, .proposalForm__row .proposalForm__labelTextarea {
+  width: 100%;
+}
+
+.proposalForm__row .proposalForm__file {
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-family: Lato, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.proposalForm__row .proposalForm__file input {
+  /*width: 100%;*/
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  display: none;
+}
+
+.proposalForm__row .proposalForm__file .proposalForm__label_file {
+  width: 100%;
+  outline: none;
+}
+
+.proposalForm__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 18px 30px;
+  border: 2px dashed #E0E0E0;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.proposalForm__column img {
+  width: 35px;
+  height: 25px;
+}
+
+.proposalForm__column span {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.proposalForm__column span i {
+  text-decoration-line: underline;
+  color: #ffcf24;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.proposalForm__column span:last-child {
+  font-size: 14px;
+}
+
+.proposalForm__files {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.proposalForm__files li {
+  width: auto;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  display: flex;
+  margin: 24px 40px 0 0;
+}
+
+.proposalForm__files li button {
+  height: 24px;
+  width: 24px;
+  margin-left: 12px;
+  border: 1px solid #ffcf24;
+  border-radius: 50%;
+  background-color: transparent;
+  position: static;
+}
+
+
+.proposalForm__files li button::before, .proposalForm__files li button::after {
+  display: none;
+}
+
+.proposalForm__files li .proposalForm__button_success {
+  background: url('../../assets/images/check_icon.svg') no-repeat center center #ffcf24;
+  outline: none;
+}
+
+.proposalForm__files li .proposalForm__button_success:hover {
+  background: url('../../assets/images/close_icon.svg') no-repeat center center #ffcf24;
+  cursor: pointer;
+}
+
+.proposalForm__row .proposalForm__license {
+  position: relative;
+  width: 100%;
+
+}
+
+.proposalForm__license::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  border: 1px solid #ffcf24;
+  height: 30px;
+  width: 30px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.proposalForm__license::after {
+  content: '';
+  background-color: #ffcf24;
+  height: 18px;
+  width: 18px;
+  display: block;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+input[type='checkbox'] {
+  margin: 0;
+  width: auto;
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+input[type='checkbox']:checked + .proposalForm__license::after {
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.proposalForm__license span {
+  margin-left: 50px;
+  font-size: 16px;
+  /*line-height: 160%;*/
+  color: #ffffff;
+  display: block;
+  width: 72%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.proposalForm__license span a {
+  text-decoration-line: underline;
+  color: #ffcf24;
+  margin: 0;
+}
+
+.proposalForm__submit {
+  margin-top: 16px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #FFCF24;
+  background: transparent;
+  border: 2px solid rgba(255, 207, 36, 0.8);
+  box-sizing: border-box;
+  padding: 24px 36px;
+  width: auto;
+  transition: 0.3s ease-in-out;
+  border-radius: 0;
+}
+
+.proposalForm__submit:hover {
+  background: #FFCF24;
+  border: 2px solid #FFCF24;
+  transition: 0.3s ease-in-out;
+  color: #212121;
+}
+
+@media (max-width: 560px) {
+  .proposalForm__row {
+    flex-direction: column;
+    margin: 0;
+  }
+  .proposalForm__row label {
+    width: 100%;
+    padding: 10px;
+  }
+  .proposalForm__license span {
+    font-size: 12px;
+    width: 85%;
+  }
+  .proposalForm__row input, textarea {
+    padding: 15px;
+  }
+}

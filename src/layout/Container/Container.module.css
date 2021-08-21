@@ -1,0 +1,31 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1380px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 12px;
+  }
+}
